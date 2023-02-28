@@ -27,18 +27,22 @@ let getMovie = () => {
                   
                 <div class="info">
                     <img src=${data.Poster} class="poster">            
-                    <div>
+                    <div class="movie-descrip">
                         <h2>${data.Title}</h2>
                         <p>Released: ${data.Released}</p>
                         <p>Runtime: ${data.Runtime}</p>
-                        <p>Actors: ${data.Actors}</p>
                         <p>Genre: ${data.Genre}</p>
-                        <p>Plot: ${data.Plot}</p>
-                        <p>IMDB Rating: ${data.imdbRating}</p>
+                        <p>Rating:<i class="fa-solid fa-star-half-stroke"></i> ${data.imdbRating}</p>
                         <p>Language: ${data.Language}</p>
                     </div>
+                    
                 </div>
-                
+                <div class="plot">
+                    <h2>Plot</h2>
+                       <p>${data.Plot}</p>
+                       <h2>Actors</h2>
+                       <p class="actors">${data.Actors}</p>
+                </div>
                 `;
                 }
           
